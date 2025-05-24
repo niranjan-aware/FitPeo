@@ -24,7 +24,7 @@ export default function HealthStatusCards() {
     <div className="main space-y-4">
       {healthData.map((item) => {
         return (
-          <div key={item.id} className="bg-[#f6faff] rounded-xl p-4 shadow-xl w-48 h-40 transform transition-transform duration-300 hover:scale-105">
+          <div key={item.id} className="bg-[#f6faff] rounded-xl p-4 shadow-md w-48 h-40 transform transition-transform duration-300 hover:scale-105">
           <div className="flex items-center space-x-3 mb-3">
             <div className={`w-8 h-8 rounded-lg flex items-center justify-center`} 
                  style={{backgroundColor: `${item.color}20`}}>

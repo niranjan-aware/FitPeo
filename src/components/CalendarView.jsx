@@ -12,7 +12,7 @@ const calendarData = {
     {id: "Tues", day: "Tues", date: "26", apointments : [
       {time:"8:00",isScheduled:false,appt_details:{}},
       {time:"9.00",isScheduled:true,appt_details:{title:"Dentist", start_time:"09:00", end_time:"11:00", desc:"Dr. Cameron Williamson"}},
-      {time:"10:00",isScheduled:false,appt_details:{}},]},
+      {time:"11:00",isScheduled:true,appt_details:{title:"Physiotherapy Appointment", start_time:"09:00", end_time:"11:00", desc:"Dr. Kevin Djones"}},]},
     {id: "wed", day: "Wed", date: "27", apointments : [
       {time:"8:00",isScheduled:false,appt_details:{}},
       {time:"9.00",isScheduled:true,appt_details:{title:"Dentist", start_time:"09:00", end_time:"11:00", desc:"Dr. Cameron Williamson"}},
@@ -20,18 +20,18 @@ const calendarData = {
     ]},
     {id: "thurs", day: "Thurs", date: "28", apointments : [
       {time:"8:00",isScheduled:false,appt_details:{}},
-      {time:"9.00",isScheduled:true,appt_details:{title:"Dentist", start_time:"09:00", end_time:"11:00", desc:"Dr. Cameron Williamson"}},
-      {time:"10:00",isScheduled:false,appt_details:{}},
+      {time:"9.00",isScheduled:true,appt_details:{title:"Health checkup complet", start_time:"09:00", end_time:"11:00", desc:"Dr. Niranja Aware"}},
+      {time:"10:00",isScheduled:true,appt_details:{title:"Opathlmogist", start_time:"09:00", end_time:"11:00", desc:"Dr. Cameron Williamson"}},
     ]},
     {id: "fri", day: "Fri", date: "29", apointments : [
       {time:"8:00",isScheduled:false,appt_details:{}},
-      {time:"9.00",isScheduled:true,appt_details:{title:"Dentist", start_time:"09:00", end_time:"11:00", desc:"Dr. Cameron Williamson"}},
-      {time:"10:00",isScheduled:false,appt_details:{}},
+      {time:"9.00",isScheduled:true,appt_details:{title:"Health checkup complete", start_time:"09:00", end_time:"11:00", desc:"Dr. Niranja Aware"}},
+      {time:"10:00",isScheduled:false,appt_details:{title:"Opathlmogist", start_time:"09:00", end_time:"11:00", desc:"Dr. Cameron Williamson"}},
     ]},
     {id: "sat", day: "Sat", date: "30", apointments : [
       {time:"8:00",isScheduled:false,appt_details:{}},
-      {time:"9.00",isScheduled:true,appt_details:{title:"Dentist", start_time:"09:00", end_time:"11:00", desc:"Dr. Cameron Williamson"}},
-      {time:"10:00",isScheduled:false,appt_details:{}},
+      {time:"9.00",isScheduled:true,appt_details:{title:"Cardiologist", start_time:"09:00", end_time:"11:00", desc:"Dr. Cameron Williamson"}},
+      {time:"10:00",isScheduled:false,appt_details:{title:"Neurologist", start_time:"09:00", end_time:"11:00", desc:"Dr. Cameron Williamson"}},
     ]},
     {id: "sun", day: "Sun", date: "31", apointments : [
       {time:"8:00",isScheduled:false,appt_details:{}},
@@ -49,7 +49,7 @@ export default function CalendarView() {
       
       {calendarData.days.map((item)=>{
         return(
-          <div key={item.id} className={`day flex flex-col gap-y-3 ${item.day === "Tues" ? 'bg-[#ecf4ff]' : 'bg-[#f6faff]'}  rounded-xl`}>
+          <div key={item.id} className={`day flex flex-col gap-y-3 ${item.day === "Tues" ? 'bg-[#ecf4ff]' : 'bg-[#f6faff]'}  rounded-xl mr-3`}>
             <h3 className="day font-semibold ">{item.day}</h3>
             <h1 className='date ml-3'>{item.date}</h1>
             {item.apointments.map((apt)=>{
@@ -67,7 +67,7 @@ export default function CalendarView() {
     <div className="todays-schedule pt-5">
      <div className="card flex flex-row">
        {
-        calendarData.days.find(day => day.day === "Sat")?.apointments.map((apt, index)=>{
+        calendarData.days.find(day => day.day === "Wed")?.apointments.map((apt, index)=>{
           return(
              <div key={index} className="mb-2">
         {apt.isScheduled && (

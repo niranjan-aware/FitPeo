@@ -5,7 +5,7 @@ import human from '../assets/View=Anterior, Dissection=Outer Muscles, Color=Yes.
 
 export default function AnatomySection() {
   return (
-    <div className="main-human-container bg-[#f6faff] rounded-xl p-6 shadow-xl  transform transition-transform duration-300 hover:scale-95">
+    <div className="main-human-container bg-[#f6faff] rounded-xl p-6 shadow-md  transform transition-transform duration-300 hover:scale-95">
       <div className="main-svg relative flex items-center justify-center ">
         <img src={human} alt="human muscular body" className="human w-80  h-[400px]" />
         <div className="health-indicator-heart flex flex-row absolute top-16 -right-2 rounded-lg text-white bg-[#3634a6] text-sm items-center px-3 py-2 space-x-1 hover:animate-bounce hover:duration-1000 shadow-2xl">
