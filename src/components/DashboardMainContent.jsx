@@ -12,13 +12,15 @@ export default function DashboardMainContent() {
         <h1 className="text-3xl font-bold text-[#3634a6]">Dashboard</h1>
       </div>
       
-      <div className="grid grid-cols-12 gap-6">
-        <div className=" left-section col-span-4 space-y-6">
-          <AnatomySection />
+      <div className="flex flex-row">
+        <div className=" left-section flex flex-col space-y-6">
+          <div className="flex flex-row gap-4">
+            <AnatomySection />
           <HealthStatusCards />
+          </div>
           <ActivityFeed />
         </div>
-        <div className="right-section col-span-8 space-y-6">
+        <div className="right-section flex flex-col space-y-6">
           <CalendarView />
           <UpcomingSchedule />
         </div>

@@ -31,7 +31,7 @@ export default function Sidebar() {
         </h2>
         <button onClick={() => setIsSideBarOpen(!isSideBarOpen)}>
           {isSideBarOpen ? (
-            <PanelRightOpen className="w-5 h-5 text-gray-400 hover:text-[#3634a6] hover:transition-all hover:duration-1000 hover:shadow-2xl" />
+            <PanelRightOpen className="w-5 h-5 text-gray-400 hover:text-[#3634a6] hover:transition-all hover:duration-300 hover:shadow-2xl" />
           ) : (
             <PanelRightClose className=" h-5 w-5 text-gray-400" />
           )}
@@ -45,7 +45,7 @@ export default function Sidebar() {
               <div
                 key={data.id}
                 className={
-                  "flex items-center space-x-3 px-3 py-2 rounded-lg cursor-pointer  hover:bg-indigo-50 hover:text-indigo-600 text-gray-400 bg-gray-50"
+                  "flex items-center space-x-3 px-3 py-2 rounded-lg cursor-pointer  hover:bg-indigo-50 hover:text-[#3634a6] text-gray-400 bg-gray-50 transition-colors duration-300 "
                 }
               >
                 <Icon className="w-5 h-5" />
@@ -56,7 +56,7 @@ export default function Sidebar() {
           <div className="contact-section space-y-2 pt-28">
             <div
               className={
-                "flex items-center space-x-3 px-3 py-2 rounded-lg cursor-pointer  hover:bg-indigo-50 hover:text-indigo-600 text-gray-400 bg-gray-50"
+                "flex items-center space-x-3 px-3 py-2 rounded-lg cursor-pointer  hover:bg-indigo-50 hover:text-[#3634a6] text-gray-400 bg-gray-50 transition-colors duration-300 "
               }
             >
               <MessageCircle className="w-5 h-5" />
@@ -64,7 +64,7 @@ export default function Sidebar() {
             </div>
             <div
               className={
-                "flex items-center space-x-3 px-3 py-2 rounded-lg cursor-pointer  hover:bg-indigo-50 hover:text-indigo-600 text-gray-400 bg-gray-50"
+                "flex items-center space-x-3 px-3 py-2 rounded-lg cursor-pointer  hover:bg-indigo-50 hover:text-[#3634a6] text-gray-400 bg-gray-50 transition-colors duration-300 "
               }
             >
               <HelpCircle className="w-5 h-5" />
@@ -74,7 +74,7 @@ export default function Sidebar() {
           <div className="settings-footer-section pt-40">
             <div
               className={
-                "flex items-center space-x-3 px-3 py-2 rounded-lg cursor-pointer  hover:bg-indigo-50 hover:text-indigo-600 text-gray-400 bg-gray-50"
+                "flex items-center space-x-3 px-3 py-2 rounded-lg cursor-pointer  hover:bg-indigo-50 hover:text-[#3634a6] text-gray-400 bg-gray-50 transition-colors duration-300 "
               }
             >
               <Settings className="w-5 h-5" />
