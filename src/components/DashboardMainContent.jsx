@@ -3,7 +3,7 @@ import AnatomySection from './AnatomySection'
 import HealthStatusCards from './HealthStatusCards'
 import ActivityFeed from './ActivityFeed'
 import CalendarView from './CalendarView'
-import UpcomingSchedule from './UpcomingSchedule'
+
 
 export default function DashboardMainContent() {
   return (
@@ -22,7 +22,7 @@ export default function DashboardMainContent() {
         </div>
         <div className="right-section flex flex-col space-y-6">
           <CalendarView />
-          <UpcomingSchedule />
+          
         </div>
       </div>
     </main>
