@@ -21,22 +21,23 @@ const sideBarData = [
   { id: "tests", label: "Tests", icon: ChartLine },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({isOpen, setIsOpen}) {
   const [isSideBarOpen, setIsSideBarOpen] = useState(true);
   return (
-    <aside className="w-64 bg-[#f6faff] border-r border-gray-100 shadow-lg rounded-r-2xl h-screen">
-      <div className="sidebar-header flex items-center justify-between w-full px-6 pt-10 pb-5">
-        <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide">
+    <aside className={`${isOpen ? 'w-64' : 'w-16'} bg-[#f6faff] border-r  border-gray-100 shadow-lg rounded-r-2xl  transition-all duration-500 `}>
+      <div className="sidebar-header flex items-center justify-between w-full  pt-10 pb-5">
+        {isOpen && <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide ml-10">
           General
-        </h2>
-        <button onClick={() => setIsSideBarOpen(!isSideBarOpen)}>
-          {isSideBarOpen ? (
+        </h2>}
+        <button onClick={() => setIsOpen(!isOpen)} className={` w-10 h-10 bg-gray-100  flex justify-center items-center shadow-3xl ${isOpen ? 'mr-3' : 'ml-3'} rounded-lg shadow-inner`}>
+          {isOpen ? (
             <PanelRightOpen className="w-5 h-5 text-gray-400 hover:text-[#3634a6] hover:transition-all hover:duration-300 hover:shadow-2xl" />
           ) : (
-            <PanelRightClose className=" h-5 w-5 text-gray-400" />
+            <PanelRightClose className=" h-5 w-5 text-gray-400 hover:text-[#3634a6] hover:transition-all hover:duration-300 hover:shadow-2xl" />
           )}
         </button>
       </div>
+      {isOpen &&
       <div className=" sidebar pr-6 pl-6 ">
         <nav className="space-y-2">
           {sideBarData.map((data) => {
@@ -83,6 +84,7 @@ export default function Sidebar() {
           </div>
         </nav>
       </div>
+      }
     </aside>
   );
 }
