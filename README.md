@@ -33,12 +33,17 @@ npm run dev
 
 ```
 
+---
+
 ## Developer
 
 # Niranjan Aware
 
 📞 9588699615
 📧 [niranjanaware26@gmail.com](niranjanaware26@gmail.com)
+
+
+---
 
 
 ## Work Experience (Highlight)
@@ -55,6 +60,9 @@ Achieved 100% test coverage with JUnit/Mockito, reducing bugs post-deployment.
 Improved uptime and performance via Grafana monitoring and Splunk analysis.
 
 Contributed to 6+ major feature rollouts across teams using Bitbucket & Bamboo CI/CD.
+
+
+---
 
 
 ## Skills
