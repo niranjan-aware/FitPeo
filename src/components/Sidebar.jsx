@@ -24,7 +24,7 @@ const sideBarData = [
 export default function Sidebar({isOpen, setIsOpen}) {
   const [isSideBarOpen, setIsSideBarOpen] = useState(true);
   return (
-    <aside className={`${isOpen ? 'w-64' : 'w-16'} bg-[#f6faff] border-r  border-gray-100 shadow-lg rounded-r-2xl  transition-all duration-500 `}>
+    <aside className={`${isOpen ? 'w-64 ' : 'w-16'} z-50   top-0 left-0 bg-[#f6faff] border-r  border-gray-100 shadow-lg rounded-r-2xl  transition-all duration-500 `}>
       <div className="sidebar-header flex items-center justify-between w-full  pt-10 pb-5">
         {isOpen && <h2 className="text-sm font-semibold text-gray-400 uppercase tracking-wide ml-10">
           General

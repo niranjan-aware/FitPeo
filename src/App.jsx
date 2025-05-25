@@ -9,7 +9,15 @@ export default function App() {
   
   return (
     <div className="main flex flex-row   bg-gray-50 ">
-      <Sidebar isOpen = {sidebarOpen} setIsOpen = {setSidebarOpen} />
+      <Sidebar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
+  
+  {sidebarOpen && (
+    <div
+      onClick={() => setSidebarOpen(false)}
+      className="fixed inset-0 bg-black/70 z-30 md:hidden"
+    />
+  )}
+      
       <div className=" flex-1 flex flex-col overflow-hidden">
         <Header />
         <DashboardMainContent />

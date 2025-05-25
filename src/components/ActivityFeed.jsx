@@ -15,8 +15,8 @@ export default function ActivityFeed() {
   const highestValue = Math.max(...weeklyStats.map((entry) => entry.count));
 
   return (
-    <div className=" bar-graph-container p-5 bg-white shadow-md rounded-lg">
-      <div className="flex justify-between items-center mb-6">
+    <div className=" bar-graph-container lg:p-4 md:p-3 sm:p-3 xs:p-4 bg-[#f6faff] shadow-md rounded-lg">
+      <div className="flex justify-between items-center lg:mb-6 md:mb-2">
         <div>
           <h3 className="title text-lg font-semibold text-gray-900">Weekly Activity</h3>
           <p className="description text-sm text-gray-500">Summary of appointments by day</p>

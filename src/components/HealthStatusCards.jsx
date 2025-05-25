@@ -7,39 +7,26 @@ const healthData = [
   { id: 'bone', label: 'Bone', date: '26 Oct 2021', status: 'warning', color: '#ff9f43' , logo :'🦴'}
 ];
 
-const card = (item) => {
-  return(
-    <div className="card-contianer  bg-[#f6faff] flex flex-col justify-center">
-      <div className="title flex flex-row justify-center">
-        <h1 className='text-2xl font-bold text-[#3634a6]'>item.label</h1>
-        <img src="" alt={item.label} />
-      </div>
-      <h3 className="date">{item.date}</h3>
-    </div>
-  );
-}
 
 export default function HealthStatusCards() {
   return (
-    <div className="main space-y-4">
+    <div className="main space-y-4 sm:gap-y-2">
       {healthData.map((item) => {
         return (
-          <div key={item.id} className="bg-[#f6faff] rounded-xl p-4 shadow-md w-48 h-40 transform transition-transform duration-300 hover:scale-105">
-          <div className="flex items-center space-x-3 mb-3">
-            <div className={`w-8 h-8 rounded-lg flex items-center justify-center`} 
+          <div key={item.id} className="bg-[#f6faff] rounded-xl xl:p-4 lg:p-3 xs:p-4 md:p-1 sm:p-4 shadow-md xs:shadow-sm xl:w-48 xl:h-40 lg:w-40 lg:h-32 md:w-32 md:h-24 sm:h-28 sm:w-36 transform transition-transform duration-300 hover:scale-105">
+          <div className="flex items-center lg:space-x-3 md:space-x-2 sm:space-x-3 xs:space-x-3 lg:mb-3 md:mb-2">
+            <div className={`lg:w-8 lg:h-8 md:w-5 md:h-5 rounded-lg flex items-center justify-center`} 
                  style={{backgroundColor: `${item.color}20`}}>
-              {item.id === 'lungs' && <span style={{color: item.color}}>{item.logo}</span>}
-              {item.id === 'teeth' && <span style={{color: item.color}}>{item.logo}</span>}
-              {item.id === 'bone' && <span style={{color: item.color}}>{item.logo}</span>}
+              <span style={{color: item.color}}>{item.logo}</span>
             </div>
             <div>
-              <h3 className="font-semibold text-gray-800">{item.label}</h3>
-              <p className="text-sm text-gray-500">Date: {item.date}</p>
+              <h3 className="lg:font-semibold md:font-medium sm:font-bold xs:font-bold text-gray-800">{item.label}</h3>
+              <p className="lg:text-sm md:text-xs text-gray-400">Date: {item.date}</p>
             </div>
           </div>
-          <div className="w-full bg-gray-200 rounded-full h-2">
+          <div className="w-full bg-gray-200 rounded-full lg:h-2 md:h-1">
             <div 
-              className="h-2 rounded-full" 
+              className="lg:h-2 md:h-1 rounded-full" 
               style={{
                 backgroundColor: item.color,
                 width: item.status === 'good' ? '85%' : '60%'
