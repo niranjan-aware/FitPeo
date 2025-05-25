@@ -1,12 +1,73 @@
-# React + Vite
+# Healthcare Dashboard - React Static Display
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my Healthcare Dashboard project — 
 
-Currently, two official plugins are available:
+## STACK
+# React + Vite + tailwindCSS
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Check it out live here:  
+[https://niranjan-aware.github.io/FitPeo/](https://niranjan-aware.github.io/FitPeo/)
+
+---
+
+## Getting Started
+
+To run this project locally on your machine, follow these simple steps:
+
+```bash
+# Clone the repo
+git clone https://github.com/niranjan-aware/FitPeo.git
+
+# Navigate into the project directory
+cd FitPeo
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+```
+
+## Developer
+
+# Niranjan Aware
+
+📞 9588699615
+📧 [niranjanaware26@gmail.com](niranjanaware26@gmail.com)
+
+
+## Work Experience (Highlight)
+
+# Sincro Digital, A DealerOn Company – Member Technical (Software Engineer)
+# Sep 2024 – Apr 2025
+
+Maintained 5+ microservices with secure, scalable Spring Boot architecture.
+
+Boosted service reliability from SonarQube D to A by resolving 50+ code quality issues.
+
+Achieved 100% test coverage with JUnit/Mockito, reducing bugs post-deployment.
+
+Improved uptime and performance via Grafana monitoring and Splunk analysis.
+
+Contributed to 6+ major feature rollouts across teams using Bitbucket & Bamboo CI/CD.
+
+
+## Skills
+
+Languages: C/C++, Java, JavaScript, HTML, CSS, SQL
+
+Frontend: ReactJS, Tailwind CSS
+
+Backend: Spring Boot, REST APIs, Hibernate, Liquibase
+
+Tools: Docker, Grafana, Kibana, SonarQube, Splunk, Maven, VS Code, IntelliJ
+
+Databases: PostgreSQL, Elasticsearch
+
+CS Fundamentals: DSA, OOP, SOLID, Design Patterns
+
