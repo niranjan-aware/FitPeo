@@ -1,5 +1,4 @@
 import React from 'react'
-import UpcomingSchedule from './UpcomingSchedule'
 import SimpleAppointmentCard from './SimpleAppointmentCard'
 
 const calendarData = {
