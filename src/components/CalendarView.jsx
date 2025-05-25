@@ -42,7 +42,7 @@ const calendarData = {
 
 export default function CalendarView() {
   return (
-    <div className="container  text-[#3634a6]  shadow-md rounded-2xl  xl:px-5 lg:px-2 md:px-2 sm:px-8 xs:px-3  bg-[#f6faff] flex items-center flex-col md:ml-3 sm:ml-0 xs:ml-0 ">
+    <div className="container  text-[#3634a6]  shadow-lg rounded-2xl  xl:px-5 lg:px-2 md:px-2 sm:px-8 xs:px-3  md:-mt-14 bg-[#f6faff] flex items-center flex-col md:ml-3 sm:ml-0 xs:ml-0 ">
     <div className="month-title font-bold text-xl pb-4 ">{calendarData.month}</div>
     <div className='calender flex flex-row xl:gap-x-3 lg:gap-x-0  md:gap-x-1 sm:gap-x-8  xs:gap-x-2'>
       
