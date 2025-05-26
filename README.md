@@ -62,7 +62,7 @@ npm run dev
 ---
 
 
-## Work Experience (Highlight)
+## Work Experience 
 
 # Sincro Digital, A DealerOn Company – Member Technical (Software Engineer)
 # Sep 2024 – Apr 2025
